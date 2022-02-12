@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "babel src --presets @babel/react --out-dir public --watch --verbose",    
+    "compile": "babel src --presets @babel/react --out-dir public"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/nouraliCS/Assignment-1/issues"
   },
-  "homepage": "https://github.com/nouraliCS/Assignment-1#readme"
+  "homepage": "https://github.com/nouraliCS/Assignment-1#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
 }
