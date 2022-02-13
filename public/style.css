@@ -1,9 +1,12 @@
-
-
-.name {
+div {
+    display:flex;
     justify-content: center;
     align-items: center;
-    
+    -ms-flex-align: center;
+}
+
+.name_out {
+    font-family:sans-serif;
 
 }
 
