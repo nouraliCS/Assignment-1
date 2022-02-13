@@ -1,4 +1,3 @@
-
 const student_name = (
   <div class ="name_out">
           <h2>Nour Ali</h2>
