@@ -4,28 +4,30 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server/server.js",
+    "start:run": "babel src --presets @babel/react --out-dir public --watch --verbose",
+    "start:watch": "nodemon --watch server server/server.js --watch ./src/App.jsx",
+    "start": "concurrently npm:start:*",
     "watch": "babel src --presets @babel/react --out-dir public --watch --verbose",
-    "compile": "babel src --presets @babel/react --out-dir public"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nouraliCS/Assignment-1.git"
   },
-  "author": "",
+  "author": "Ali",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nouraliCS/Assignment-1/issues"
   },
   "homepage": "https://github.com/nouraliCS/Assignment-1#readme",
   "dependencies": {
-    "express": "^4.17.2",
-    "nodemon": "^2.0.15"
+    "express": "^4.17.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.0",
     "@babel/core": "^7.17.2",
-    "@babel/preset-react": "^7.16.7"
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "nodemon": "^2.0.15"
   }
 }
